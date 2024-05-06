@@ -170,15 +170,14 @@ class FavoritesPage extends StatelessWidget{
           padding: const EdgeInsets.all(20),
           child: Text('You have ${favorites.length} favorites:'),
         ),
-        for (var fav in favorites)
+        for(var fav in favorites)
           ListTile(
             leading: Icon(Icons.favorite),
-            title: Text(fav.asLowerCase),
+            title: Text(fav.asLowerCase)
           )
       ],
-    );
 
-    throw UnimplementedError();
+    );
   }
 
 }
